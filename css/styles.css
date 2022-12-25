@@ -57,6 +57,7 @@ button{
   --brand-color-radius: #8E8F99;
   --brand-color-svg: #31D0AA;
   --brand-color-button: #404BBF;
+  --brand-color-input: #4D5AE5;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -877,9 +878,9 @@ align-items: baseline;
 .modal-button:hover,
 .modal-button:focus{
   outline: none;
-  background: #404BBF;
-box-shadow: 0px 1px 6px #404BBF, 0px 1px 1px #404BBF, 0px 2px 1px #404BBF;
-fill: #ffff;
+  background: var(--brand-color-button);
+box-shadow: 0px 1px 6px var(--brand-color-button), 0px 1px 1px var(--brand-color-button), 0px 2px 1px var(--brand-color-button);
+fill: var(--brand-color-white-text);
 }
 
 input {
@@ -944,11 +945,11 @@ top: 32px;
 }
 .modal-form-field:focus{
  outline: none;
-  border: 1px solid #4D5AE5;
+  border: 1px solid var(--brand-color-input:);
   
 }
 .modal-form-field:focus+.icon-svg-modal{
-  fill: #4D5AE5;
+  fill: var(--brand-color-input:);
 }
 .modal-form-field-texterea{
   resize: none;
@@ -960,12 +961,12 @@ top: 32px;
   padding: 8px 16px;
 }
 .modal-form-field-texterea:focus{
-  border: 1px solid #4D5AE5;
+  border: 1px solid var(--brand-color-input:);
 }
 .modal-send{
   display: block;
   text-align: center;
-  background-color: #4D5AE5;
+  background-color: var(--brand-color-input:);
   color: var(--brand-color-white-text);
   border-radius: 4px;
   outline: none;
@@ -983,7 +984,7 @@ top: 32px;
   font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
-    color: #4D5AE5;
+    color: var(--brand-color-input:);
     margin-left: 5px;
 }
 .checbox-p{
@@ -1001,7 +1002,7 @@ top: 32px;
 .checkbox-input-lable::before{
   content:" " ;
   display: block;
-  border: 1.25px solid #2E2F42;
+  border: 1.25px solid var(--brand-color-black);
   border-radius: 2px;
   cursor: pointer;
   width: 14px;
@@ -1013,13 +1014,13 @@ top: 32px;
   background-image: url(/images/clic1.svg);
   background-repeat: no-repeat;
   text-align: center;
-   background-color: #404BBF;
-  border: 1.25px solid #404BBF;
+   background-color: var(--brand-color-button);
+  border: 1.25px solid var(--brand-color-button);
  /* box-shadow: inset 0 0 0 2px rgb(255, 255, 255); */
 }
 .modal-form-check:focus+.checkbox-input-lable::before {
   outline: none;
-  outline: 1.25px solid #404BBF;
+  outline: 1.25px solid var(--brand-color-button);
 }
 .sobscribe-input{
   position: relative;
@@ -1035,7 +1036,7 @@ top: 32px;
     line-height: 1.5;
     margin-bottom: 16px;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--brand-color-white-background);
 }
 .subscribe-send{
   position: absolute;
@@ -1043,15 +1044,15 @@ top: 32px;
   right: 0;
   width: 165px;
   height: 40px;
-  color: #FFFFFF;
-  background-color: #4d5ae5;
+  color: var(--brand-color-white-text);
+  background-color: var(--brand-color-input:);
 }
 .subscribe-form-field{
   width: 264px;
   height: 40px;
-  color: #ffffff;
+  color: var(--brand-color-white-text);
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background: #2E2F42;
+  background: var(--brand-color-black);
   padding: 8px 8px 8px 16px;
   border-radius: 4px;
 }
