@@ -658,8 +658,8 @@ padding-bottom: 32px;
 }
 .customers-panei-icon:hover,
 .customers-panei-icon:focus{
-  border-color:var(--brand-color) ;
-  fill:var(--brand-color) ;
+  border-color:var(--brand-color);
+  fill:var(--brand-color);
 }
 
 .icon-svg{
