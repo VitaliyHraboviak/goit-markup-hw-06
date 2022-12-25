@@ -945,11 +945,11 @@ top: 32px;
 }
 .modal-form-field:focus{
  outline: none;
-  border: 1px solid var(--brand-color-input:);
+  border: 1px solid var(--brand-color-input);
   
 }
 .modal-form-field:focus+.icon-svg-modal{
-  fill: var(--brand-color-input:);
+  fill: var(--brand-color-input);
 }
 .modal-form-field-texterea{
   resize: none;
@@ -961,12 +961,12 @@ top: 32px;
   padding: 8px 16px;
 }
 .modal-form-field-texterea:focus{
-  border: 1px solid var(--brand-color-input:);
+  border: 1px solid var(--brand-color-input);
 }
 .modal-send{
   display: block;
   text-align: center;
-  background-color: var(--brand-color-input:);
+  background-color: var(--brand-color-input);
   color: var(--brand-color-white-text);
   border-radius: 4px;
   outline: none;
@@ -984,7 +984,7 @@ top: 32px;
   font-weight: 400;
     font-size: 12px;
     line-height: 1.33;
-    color: var(--brand-color-input:);
+    color: var(--brand-color-input);
     margin-left: 5px;
 }
 .checbox-p{
@@ -1038,15 +1038,7 @@ top: 32px;
     letter-spacing: 0.02em;
     color: var(--brand-color-white-background);
 }
-.subscribe-send{
-  position: absolute;
-  top: 40px;
-  right: 0;
-  width: 165px;
-  height: 40px;
-  color: var(--brand-color-white-text);
-  background-color: var(--brand-color-input:);
-}
+
 .subscribe-form-field{
   width: 264px;
   height: 40px;
@@ -1057,16 +1049,24 @@ top: 32px;
   border-radius: 4px;
 }
 .subscribe-send{
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: 165px;
+  height: 40px;
+  color: var(--brand-color-white-text);
   padding: 8px 8px 8px 0;
   background-image: url(/images/iconsend.svg);
   object-position: center;
   background-repeat: no-repeat;
   text-align: center;
   background-position-x: 75%;
-    background-position-y: 50%;
+  background-position-y: 50%;
   border-radius: 4px;
+  background-color: var(--brand-color-input);
   }
+
 .subscribe-send-title{
-padding-left: 24px;
-display: flex;
+  padding-left: 24px;
+  display: flex;
 }
