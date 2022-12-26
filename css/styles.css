@@ -58,6 +58,8 @@ button{
   --brand-color-svg: #31D0AA;
   --brand-color-button: #404BBF;
   --brand-color-input: #4D5AE5;
+  --brand-color-fill: #757575;
+  --brand-color-gey:
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -663,7 +665,7 @@ padding-bottom: 32px;
 }
 
 .icon-svg{
-  fill: #000000; 
+  fill: ; 
 }
 .icon-styles{
   display: flex;
@@ -688,8 +690,8 @@ padding-bottom: 32px;
 }
 .icon-svg-close{
   width: 100%;
-height: 100%;
-display: flex;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
   fill: var(--brand-color-black-1);
@@ -846,7 +848,7 @@ align-items: baseline;
   top: 0;
   left: 0;
   width: 100%;
-  height: 676px;
+  height: 100%;
   background-color: rgba(46, 47, 66, 0.6);
 
 }
@@ -859,7 +861,7 @@ align-items: baseline;
   min-width: 408px;
   min-height: 576px;
   padding: 24px;
-  
+  padding-top: 72px;
   background-color: var(--brand-color-white-text);
   
   
@@ -891,12 +893,17 @@ input {
   font-family: inherit;
   font-size: inherit;
   padding-left: 38px;
+  
+  
 }
-
+textarea::placeholder{
+  color: rgba(117, 117, 117, 0.5);
+}
 label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 8px;
+  
+  
   
   font-family: Roboto;
   font-size: 12px;
@@ -913,21 +920,30 @@ label {
 .modal-p{
   display:flex;
   justify-content: center;
-  margin-top: 72px;
   margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.modal-title{
+  
+  color: var(--brand-color-fill);
+  
 }
 .modal-form-input-desc{
   position: relative;
   margin-bottom: 4px;
+  margin-top: 8px;
   
 }
 .icon-svg-modal{
   position: absolute;
-left: 19px;
-top: 32px;
+  left: 19px;
+  top: 50%;
 }
 .modal-form{
    position: relative;
+   color: var(--brand-color-radius);
 }
 .icon-svg-modal-phon{
   position: absolute;
@@ -940,6 +956,7 @@ top: 32px;
     top: 290px;
 }
 .modal-form-field{
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
@@ -959,6 +976,7 @@ top: 32px;
   width: 100%;
   height: 100px;
   padding: 8px 16px;
+  
 }
 .modal-form-field-texterea:focus{
   border: 1px solid var(--brand-color-input);
@@ -996,7 +1014,8 @@ top: 32px;
   display: flex;
   flex-direction: initial;
   align-items: center;
-  margin-top: 16px;
+  margin-top: 4px;
+  
   
 }
 .checkbox-input-lable::before{
@@ -1013,7 +1032,8 @@ top: 32px;
 .modal-form-check:checked + .checkbox-input-lable::before{
   background-image: url(/images/clic1.svg);
   background-repeat: no-repeat;
-  text-align: center;
+  background-position: 50% 50%;
+  text-align:center ;
    background-color: var(--brand-color-button);
   border: 1.25px solid var(--brand-color-button);
  /* box-shadow: inset 0 0 0 2px rgb(255, 255, 255); */
@@ -1043,13 +1063,13 @@ top: 32px;
   width: 264px;
   height: 40px;
   color: var(--brand-color-white-text);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.302);
   background: var(--brand-color-black);
   padding: 8px 8px 8px 16px;
   border-radius: 4px;
 }
 .subscribe-send{
-  position: absolute;
+  /* position: absolute; */
   top: 40px;
   right: 0;
   width: 165px;
@@ -1064,9 +1084,14 @@ top: 32px;
   background-position-y: 50%;
   border-radius: 4px;
   background-color: var(--brand-color-input);
+  margin-left: 24px;
   }
 
 .subscribe-send-title{
   padding-left: 24px;
   display: flex;
+}
+.subscribe-form{
+  display: flex;
+  flex-direction: row;
 }

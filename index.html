@@ -55,9 +55,9 @@
           <div class="bakdrop is-hidden" data-modal>
             <div class="modal">
               <form>
-                <p class="modal-p">
+                <h3 class="modal-p">
                   Leave your contacts and we will call you back
-                </p>
+                </h3>
                 <div class="modal-form">
                   <label>
                     <span class="modal-form-input-desc">Name</span>
@@ -69,8 +69,8 @@
                     pattern="[a-zA-Za-яА-Я]+"
                     minlength="2"
                     />
-                    <svg class="icon-svg-modal" width="12px" height="12px">
-                      <use href="./images/icon.svg#icon-Vector2"></use>
+                    <svg class="icon-svg-modal" width="18px" height="18px">
+                      <use href="./images/icon.svg#icon-person"></use>
                     </svg>
                   </label>
                 </div>
@@ -85,8 +85,8 @@
                       pattern="[0=9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
                       title="xxx-xxx-xx-xx"
                     />
-                    <svg class="icon-svg-modal" width="12px" height="12px">
-                      <use href="./images/icon.svg#icon-Vector3"></use>
+                    <svg class="icon-svg-modal" width="18px" height="24px">
+                      <use href="./images/icon.svg#icon-phone"></use>
                     </svg>
                   </label>
                 </div>
@@ -94,8 +94,8 @@
                   <label>
                     <span class="modal-form-input-desc">Email</span>
                     <input class="modal-form-field" type="email" name="phone_number" />
-                    <svg class="icon-svg-modal" width="12px" height="12px">
-                      <use href="./images/icon.svg#icon-Vector4"></use>
+                    <svg class="icon-svg-modal" width="18px" height="24px">
+                      <use href="./images/icon.svg#icon-email"></use>
                     </svg>
                   </label>
                 </div>
@@ -114,11 +114,11 @@
                   
                   <input id="user-policy" type="checkbox" name="user-policy" class="modal-form-check visually-hidden" />
                   <label for="user-policy" class="checkbox-input-lable">
-                  accept the terms and conditions of the <a class="modal-link" href="">Privacy Policy</a>
+                  <p class="modal-title" >  I accept the terms and conditions of the</p> <a class="modal-link" href="">Privacy Policy</a>
                     
                   </label>
                 </div>
-                <button class="modal-send" type="Send">Send</button>
+                <button class="modal-send" type="submit">Send</button>
               </form>
               <button class="modal-button" data-modal-close>
                 <svg class="icon-svg-cloce" width="8px" height="8px">
@@ -507,23 +507,21 @@
               </a>
             </li>
           </ul>
-        
-            
         </div>
         <div class="sobscribe-input">
           <h2 class="subscribe-title">Subscribe</h2>
-          <label>
-            <input 
-            class="subscribe-form-field" 
-            type="email" 
-            name="email" 
-            placeholder="Email"/>
-            
-          </label>
-          <button  class="subscribe-send" type="Send">
+          <form class="subscribe-form">
+            <label>
+              <input 
+              class="subscribe-form-field" 
+              type="email" 
+              name="email" 
+              placeholder="Email"/>
+            </label>
+            <button  class="subscribe-send" type="submit">
             <p class="subscribe-send-title">Subscribe</p>
-            
-          </button>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
