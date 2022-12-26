@@ -1030,7 +1030,7 @@ label {
 
 }
 .modal-form-check:checked + .checkbox-input-lable::before{
-  background-image: url(/images/clic1.svg);
+  background-image: url(../images/clic1.svg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   text-align:center ;
@@ -1076,7 +1076,7 @@ label {
   height: 40px;
   color: var(--brand-color-white-text);
   padding: 8px 8px 8px 0;
-  background-image: url(/images/iconsend.svg);
+  background-image: url(../images/iconsend.svg);
   object-position: center;
   background-repeat: no-repeat;
   text-align: center;
