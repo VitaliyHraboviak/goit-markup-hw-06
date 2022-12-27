@@ -939,7 +939,7 @@ label {
 .icon-svg-modal{
   position: absolute;
   left: 19px;
-  top: 50%;
+  top: 55%;
 }
 .modal-form{
    position: relative;
@@ -1014,7 +1014,7 @@ label {
   display: flex;
   flex-direction: initial;
   align-items: center;
-  margin-top: 4px;
+  margin-top: 16px;
   
   
 }
